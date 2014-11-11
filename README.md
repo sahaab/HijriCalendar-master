@@ -5,9 +5,12 @@ HijriCalendar is a fragment made from the Caldroid fragment by thomasdao. Made O
 
 It has the same functions as Caldroid and more. You can get Islamic Dates for a certain date and many other functions.
 
+<img src="https://raw.githubusercontent.com/sahaab/HijriCalendar-master/master/HijriCalendarScreenShots/Screenshot_2014-11-10-22-02-30.png" width="270">
+<img src="https://raw.githubusercontent.com/sahaab/HijriCalendar-master/master/HijriCalendarScreenShots/Screenshot_2014-11-10-22-02-39.png" width="270">
+
 Sources
 =======
-Caldroid : https://github.com/roomorama/Caldroid
+Caldroid : https://github.com/roomorama/Caldroid <br>
 Umm Al Qura Islamic Calendar : https://gist.github.com/fatfingers/6492017
 
 Instructions
