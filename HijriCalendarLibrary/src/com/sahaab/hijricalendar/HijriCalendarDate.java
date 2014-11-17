@@ -107,7 +107,7 @@ public final class HijriCalendarDate {
 		79399,79428,79458,79487,79517,79546,79576,79606,79635,79665,79695,79724,79753,79783,79812,79841,79871,79900,79930,79960,
 		79990 };
 
-	public static int[] ummalQuraCalendar(Calendar cal,  String valuechange) {
+	public static int[] ummalQuraCalendar(Calendar cal,  int valuechange) {
 		if (cal == null) cal = Calendar.getInstance();
 		
 		
@@ -116,7 +116,7 @@ public final class HijriCalendarDate {
 		double month = cal.get(Calendar.MONTH);
 		double year = cal.get(Calendar.YEAR);
 		double weekday = cal.get(Calendar.DAY_OF_WEEK);
-
+/*
 		if(valuechange.equals("minus2")) {
 			day = day - 2;
 		}else if (valuechange.equals("minus1")) {
@@ -126,7 +126,8 @@ public final class HijriCalendarDate {
 		}else if (valuechange.equals("plus2")) {
 			day = day + 2;
 		}
-		
+*/
+		day = day + valuechange;
 		//append January and February to the previous year (i.e. regard March as
 		//the first month of the year in order to simplify leapday corrections)
 		double  m = month + 1;
@@ -171,22 +172,22 @@ public final class HijriCalendarDate {
 		return new int[]{ (int)weekday, (int)day, (int)month, (int)year };
 	}
 
-	public static String getSimpleDate(Calendar cal, String valuechange) {
+	public static String getSimpleDate(Calendar cal, int valuechange) {
 		int[] dt = ummalQuraCalendar(cal, valuechange);
 		return dt[1] + " " + MONTHS[dt[2]] + " " + dt[3];
 	}
 	
-	public static String getSimpleDateDay(Calendar cal, String valuechange) {
+	public static String getSimpleDateDay(Calendar cal, int valuechange) {
 		int[] dt = ummalQuraCalendar(cal, valuechange);
 		return String.valueOf(dt[1]);
 	}
 	
-	public static String getSimpleDateMonth(Calendar cal, String valuechange) {
+	public static String getSimpleDateMonth(Calendar cal, int valuechange) {
 		int[] dt = ummalQuraCalendar(cal, valuechange);
 		return MONTHS[dt[2]];
 	}
 	
-	public static String getSimpleDateYear(Calendar cal, String valuechange) {
+	public static String getSimpleDateYear(Calendar cal, int valuechange) {
 		int[] dt = ummalQuraCalendar(cal, valuechange);
 		return String.valueOf(dt[3]);
 	}
