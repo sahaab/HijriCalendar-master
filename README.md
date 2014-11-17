@@ -59,11 +59,7 @@ and in your activity layout add
 	
 Accepted Strings for ```valuechange``` are
 ```
-"minus2"
-"minus1"
-"0"
-"plus1"
-"plus2"
+any integer
 ```
 
 To use, simply use code 
