@@ -924,7 +924,7 @@ public class CaldroidFragment extends DialogFragment {
 		Calendar Qurancal = Calendar.getInstance();
 		Qurancal.setTimeInMillis(millis);
 		
-		String hijrimonthtitle = HijriCalendarDate.getSimpleDateMonth(Qurancal, "0") + " " + HijriCalendarDate.getSimpleDateYear(Qurancal, "0");
+		String hijrimonthtitle = HijriCalendarDate.getSimpleDateMonth(Qurancal, 0) + " " + HijriCalendarDate.getSimpleDateYear(Qurancal, 0);
 
 		monthTitleTextView.setText(monthTitle);
 		hijrimonthTitleTextView.setText(hijrimonthtitle);
